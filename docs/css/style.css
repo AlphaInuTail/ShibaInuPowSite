@@ -63,8 +63,6 @@ section {
     padding-bottom: 20px; /* Additional padding for spacing */
 }
 
-/* Specific styles for each section */
-
 /* Shiba Section */
 #shibainupow {
     height: calc(100vh - 70px - 50px); /* Adjust for header and footer height */
@@ -78,7 +76,6 @@ section {
     margin: 0; /* Remove any margin */
 }
 
-/* Make sure the h1 and p elements within #shibainupow fit */
 #shibainupow h1 {
     font-size: 4em; /* Reduced for better scaling */
     margin-top: 5px;
@@ -213,4 +210,66 @@ footer {
 
 .highlight {
     color: #ffa500;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 80px; /* Ensure footer is visible on small screens */
+    }
+
+    header {
+        height: 60px; /* Reduce header height */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Reduce spacing between items */
+    }
+
+    nav ul li a {
+        font-size: 0.9em; /* Reduce font size */
+        padding: 3px 8px; /* Smaller button padding */
+    }
+
+    section {
+        width: 90%; /* Increase section width for smaller screens */
+        padding: 15px; /* Reduce padding */
+    }
+
+    #shibainupow h1 {
+        font-size: 3em; /* Scale down the font size */
+    }
+
+    #shibainupow p {
+        font-size: 1.2em; /* Scale down text */
+    }
+
+    #about h1 {
+        font-size: 2.5em; /* Smaller header size */
+    }
+
+    #about p {
+        font-size: 1.2em; /* Adjust text size */
+    }
+
+    #join h1 {
+        font-size: 3em; /* Smaller header for the join section */
+    }
+
+    #join p {
+        font-size: 1.3em; /* Adjust paragraph font size */
+    }
+
+    .join-logos-container {
+        flex-direction: column; /* Stack logos vertically on smaller screens */
+        gap: 10px; /* Reduced gap */
+    }
+
+    .join-logos img {
+        width: 60px; /* Smaller logo size */
+    }
+
+    footer {
+        font-size: 10px; /* Smaller footer text */
+    }
 }
