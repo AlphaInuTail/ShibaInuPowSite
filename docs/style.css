@@ -11,6 +11,7 @@ body {
     align-items: center;
     text-align: center;
     padding-bottom: 50px; /* Added padding to account for the footer height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header styling */
@@ -85,6 +86,8 @@ section {
     background: linear-gradient(180deg, #010312, #050118); /* Subtle gradient background */
     border-radius: 10px; /* Rounded corners for a clean look */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Glow effect */
+    max-height: calc(100vh - 150px); /* Make About section scrollable */
+    overflow-y: auto; /* Allow vertical scrolling */
 }
 
 #about h1 {
@@ -129,6 +132,16 @@ section {
 }
 
 /* Join Section */
+#join {
+    margin-top: 70px; /* Adjusted for header spacing */
+    padding: 40px;
+    text-align: center;
+    color: #ed680b;
+    background: linear-gradient(180deg, #010312, #050118); /* Subtle gradient background */
+    border-radius: 10px; /* Rounded corners for a clean look */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Glow effect */
+}
+
 #join h1 {
     font-size: 4em; /* Reduced for compactness */
     margin-top: 5px;
