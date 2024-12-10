@@ -96,9 +96,6 @@ section {
     padding-top: 30px;
     text-align: center;
     color: #ed680b;
-    background: linear-gradient(180deg, #010312, #050118); /* Subtle gradient background */
-    border-radius: 10px; /* Rounded corners for a clean look */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Glow effect */
     overflow-y: auto; /* Allow vertical scrolling */
     overflow: hidden;
 }
@@ -144,9 +141,6 @@ section {
     padding: 40px;
     text-align: center;
     color: #ed680b;
-    background: linear-gradient(180deg, #010312, #050118); /* Subtle gradient background */
-    border-radius: 10px; /* Rounded corners for a clean look */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Glow effect */
     height: calc(100vh - 70px - 50px); /* Prevent scroll by limiting height */
 }
 
@@ -215,7 +209,6 @@ footer {
         padding: 15px; /* Reduced padding for mobile */
         font-size: 1em; /* Adjust font size for readability */
         max-width: 100%; /* Ensure content fits the screen */
-        box-shadow: none; /* Optional: Remove the shadow for mobile */
         overflow-x: hidden; /* Disable horizontal scrolling */
         overflow-y: auto; /* Allow vertical scrolling if content exceeds */
         max-height: 80vh; /* Limit height to avoid overflow and cut off */
