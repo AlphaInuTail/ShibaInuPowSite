@@ -213,63 +213,105 @@ footer {
 }
 
 /* Mobile-specific adjustments */
+/* Media query for mobile devices (up to 768px) */
 @media (max-width: 768px) {
-    body {
-        padding-bottom: 80px; /* Ensure footer is visible on small screens */
-    }
 
-    header {
-        height: 60px; /* Reduce header height */
-    }
-
-    nav ul li {
-        margin: 0 10px; /* Reduce spacing between items */
-    }
-
-    nav ul li a {
-        font-size: 0.9em; /* Reduce font size */
-        padding: 3px 8px; /* Smaller button padding */
-    }
-
-    section {
-        width: 90%; /* Increase section width for smaller screens */
-        padding: 15px; /* Reduce padding */
-    }
-
-    #shibainupow h1 {
-        font-size: 3em; /* Scale down the font size */
-    }
-
-    #shibainupow p {
-        font-size: 1.2em; /* Scale down text */
+    /* About Section */
+    #about {
+        padding: 15px; /* Reduced padding for mobile */
+        font-size: 1em; /* Adjust font size for readability */
+        max-width: 100%; /* Ensure content fits the screen */
+        box-shadow: none; /* Optional: Remove the shadow for mobile */
+        overflow-x: hidden; /* Disable horizontal scrolling */
+        overflow-y: auto; /* Allow vertical scrolling if content exceeds */
+        max-height: 80vh; /* Limit height to avoid overflow and cut off */
     }
 
     #about h1 {
-        font-size: 2.5em; /* Smaller header size */
+        font-size: 2.5em; /* Adjusted font size for mobile */
     }
 
     #about p {
-        font-size: 1.2em; /* Adjust text size */
+        font-size: 1.1em; /* Reduced font size for readability */
+        line-height: 1.6;
+    }
+
+    #about ul li {
+        font-size: 1em; /* Slightly smaller font size */
+    }
+
+    /* Prevent horizontal scrolling for any section */
+    body, section {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Shiba Inu Pow Section (Main Title) */
+    #shibainupow h1 {
+        font-size: 2.5em; /* Reduced font size for mobile */
+        white-space: normal; /* Allow the title to break into multiple lines */
+        line-height: 1.3;
+    }
+
+    /* Join Section */
+    #join {
+        padding: 30px 10px; /* Reduced padding for mobile */
+        height: auto; /* Allow section to adjust height */
     }
 
     #join h1 {
-        font-size: 3em; /* Smaller header for the join section */
+        font-size: 3em; /* Smaller title font size */
     }
 
     #join p {
-        font-size: 1.3em; /* Adjust paragraph font size */
+        font-size: 1.2em; /* Reduced font size */
     }
 
     .join-logos-container {
-        flex-direction: column; /* Stack logos vertically on smaller screens */
-        gap: 10px; /* Reduced gap */
+        display: flex;
+        flex-wrap: wrap; /* Allow logos to wrap to the next line */
+        justify-content: center;
     }
 
     .join-logos img {
-        width: 60px; /* Smaller logo size */
+        width: 60px;  /* Smaller image width */
+        height: auto;
+        margin: 10px; /* Space between logos */
     }
 
+    .logo {
+        width: 250px; /* Reduced logo size */
+    }
+
+    /* Footer */
     footer {
-        font-size: 10px; /* Smaller footer text */
+        padding: 10px 0;
+        font-size: 0.9em; /* Smaller font size */
+    }
+}
+
+/* Additional adjustments for extra small screens (e.g., smartphones in portrait) */
+@media (max-width: 480px) {
+    /* Reduce the size of the Shiba Inu Pow title even more on small screens */
+    #shibainupow h1 {
+        font-size: 2em;
+        line-height: 1.2;
+    }
+
+    /* About Section - further adjust font sizes for better readability */
+    #about h1 {
+        font-size: 2em; /* Smaller font size */
+    }
+
+    #about p {
+        font-size: 1em;
+    }
+
+    /* Join Section */
+    #join h1 {
+        font-size: 2.5em; /* Adjust for small screens */
+    }
+
+    #join p {
+        font-size: 1.1em;
     }
 }
