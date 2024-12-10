@@ -1,0 +1,182 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: #010312;
+    color: #ed680b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px; /* Added padding to account for the footer height */
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    background-color: #010312;
+    padding: 5px 0; /* Reduced padding to shrink header height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px; /* Reduced spacing between buttons */
+}
+
+nav ul li a {
+    color: #ed680b;
+    text-decoration: none;
+    font-size: 1em; /* Reduced font size */
+    text-transform: uppercase;
+    padding: 5px 10px; /* Smaller padding for compact buttons */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Section styling */
+section {
+    margin-top: 70px; /* Adjusted for smaller header height */
+    padding: 30px;
+    width: 80%;
+    max-width: 1000px;
+    padding-bottom: 20px; /* Additional padding for spacing */
+}
+
+/* Specific styles for each section */
+
+/* Shiba Section */
+#shibainupow h1 {
+    font-size: 4em; /* Reduced for better scaling */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#shibainupow p {
+    font-size: 1.4em; /* Adjusted for proportion */
+    max-width: 1000px;
+    margin: 10px auto;
+    line-height: 1.5;
+}
+
+/* About Section */
+#about {
+    margin-top: 70px; /* Adjusted for header spacing */
+    padding: 40px;
+    text-align: center;
+    color: #ed680b;
+    background: linear-gradient(180deg, #010312, #050118); /* Subtle gradient background */
+    border-radius: 10px; /* Rounded corners for a clean look */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Glow effect */
+}
+
+#about h1 {
+    font-size: 4em; /* Adjusted size */
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.5em; /* Reduced for better scaling */
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.8;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+#about ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+}
+
+#about ul li::before {
+    content: '🐾';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5em;
+}
+
+#about strong {
+    color: #ffa500; /* Highlight key points */
+}
+
+/* Join Section */
+#join h1 {
+    font-size: 4em; /* Reduced for compactness */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#join p {
+    font-size: 1.5em; /* Adjusted for consistency */
+    max-width: 1000px;
+    margin: 10px auto;
+    line-height: 1.5;
+}
+
+/* Logo Styling */
+.join-logos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Reduced gap between logos */
+    margin-top: 20px; /* Adjusted margin for spacing */
+}
+
+.join-logos img {
+    width: 80px;  /* Smaller image width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+.join-logos img:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    width: 350px; /* Reduced logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    background-color: #010312;
+    padding: 15px 0; /* Adjusted for compactness */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: #ed680b;
+}
+
+.copyright {
+    font-size: 12px; /* Slightly smaller text */
+}
