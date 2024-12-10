@@ -93,6 +93,7 @@ section {
 #about {
     margin-top: 70px; /* Adjusted for header spacing */
     padding: 30px; /* Slightly reduced padding to make more room for content */
+    padding-top: 30px;
     text-align: center;
     color: #ed680b;
     background: linear-gradient(180deg, #010312, #050118); /* Subtle gradient background */
@@ -100,12 +101,6 @@ section {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Glow effect */
     overflow-y: auto; /* Allow vertical scrolling */
     overflow: hidden;
-}
-
-#about h1 {
-    font-size: 3.5em; /* Reduced font size for better fit */
-    margin-top: 5px;
-    margin-bottom: 15px; /* Reduced margin for better spacing */
 }
 
 #about p {
@@ -213,7 +208,6 @@ footer {
 }
 
 /* Mobile-specific adjustments */
-/* Media query for mobile devices (up to 768px) */
 @media (max-width: 768px) {
 
     /* About Section */
