@@ -12,6 +12,7 @@ body {
     text-align: center;
     padding-bottom: 50px; /* Added padding to account for the footer height */
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: hidden; /* Prevent vertical scrolling in the body */
 }
 
 /* Header styling */
@@ -25,6 +26,7 @@ header {
     z-index: 1000;
     display: flex;
     justify-content: center;
+    height: 70px; /* Fix header height */
 }
 
 nav ul {
@@ -39,7 +41,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ed680b;
+    color: #ffa500;
     text-decoration: none;
     font-size: 1em; /* Reduced font size */
     text-transform: uppercase;
@@ -64,6 +66,19 @@ section {
 /* Specific styles for each section */
 
 /* Shiba Section */
+#shibainupow {
+    height: calc(100vh - 70px - 50px); /* Adjust for header and footer height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Prevent any scrolling in this section */
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+}
+
+/* Make sure the h1 and p elements within #shibainupow fit */
 #shibainupow h1 {
     font-size: 4em; /* Reduced for better scaling */
     margin-top: 5px;
@@ -80,42 +95,43 @@ section {
 /* About Section */
 #about {
     margin-top: 70px; /* Adjusted for header spacing */
-    padding: 40px;
+    padding: 30px; /* Slightly reduced padding to make more room for content */
     text-align: center;
     color: #ed680b;
     background: linear-gradient(180deg, #010312, #050118); /* Subtle gradient background */
     border-radius: 10px; /* Rounded corners for a clean look */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Glow effect */
     overflow-y: auto; /* Allow vertical scrolling */
+    overflow: hidden;
 }
 
 #about h1 {
-    font-size: 4em; /* Adjusted size */
+    font-size: 3.5em; /* Reduced font size for better fit */
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reduced margin for better spacing */
 }
 
 #about p {
-    font-size: 1.5em; /* Reduced for better scaling */
-    max-width: 800px;
+    font-size: 1.3em; /* Reduced font size for better scaling */
+    max-width: 1100px; /* Slightly reduced max width for better fit */
     margin: 15px auto;
-    line-height: 1.8;
+    line-height: 1.7; /* Reduced line height for better fit */
 }
 
 #about ul {
     list-style: none;
     padding: 0;
-    margin: 20px auto;
-    max-width: 800px;
+    margin: 15px auto; /* Reduced margin */
+    max-width: 1100px; /* Slightly reduced max width */
     text-align: left;
 }
 
 #about ul li {
-    font-size: 1.2em;
-    margin: 10px 0;
+    font-size: 1.1em; /* Slightly reduced font size */
+    margin: 8px 0; /* Reduced margin between list items */
     padding-left: 20px;
     position: relative;
-    line-height: 1.6;
+    line-height: 1.5; /* Reduced line height */
 }
 
 #about ul li::before {
@@ -123,7 +139,7 @@ section {
     position: absolute;
     left: 0;
     top: 0;
-    font-size: 1.5em;
+    font-size: 1.3em; /* Reduced size of the icon */
 }
 
 #about strong {
@@ -139,6 +155,7 @@ section {
     background: linear-gradient(180deg, #010312, #050118); /* Subtle gradient background */
     border-radius: 10px; /* Rounded corners for a clean look */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Glow effect */
+    height: calc(100vh - 70px - 50px); /* Prevent scroll by limiting height */
 }
 
 #join h1 {
@@ -187,8 +204,13 @@ footer {
     bottom: 0;
     left: 0;
     color: #ed680b;
+    height: 50px; /* Set height of footer */
 }
 
 .copyright {
     font-size: 12px; /* Slightly smaller text */
+}
+
+.highlight {
+    color: #ffa500;
 }
