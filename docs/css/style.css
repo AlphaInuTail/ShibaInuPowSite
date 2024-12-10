@@ -5,7 +5,7 @@ body {
     background: #010312;
     color: #ed680b;
     min-height: 100vh;  
-    display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
